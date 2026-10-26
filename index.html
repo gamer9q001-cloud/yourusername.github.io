@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Free, easy-to-use online text tools and calculators. No signup required.">
+  <meta name="theme-color" content="#4f46e5">
+  <title>FreeTools Hub — Free Online Tools</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="FreeTools Hub home"><span class="brand-mark">✦</span> FreeTools Hub</a>
+    <a class="header-link" href="#tools">Explore tools</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">SIMPLE · FREE · IN YOUR BROWSER</p>
+      <h1>Small tools.<br><span>Big time-savers.</span></h1>
+      <p class="hero-copy">Handy online tools for everyday tasks. No account, no downloads, and no fees.</p>
+      <label class="search-wrap">
+        <span aria-hidden="true">⌕</span>
+        <input id="toolSearch" type="search" placeholder="Search tools…" aria-label="Search tools">
+      </label>
+      <div class="hero-pills"><span>✓ Free to use</span><span>✓ Mobile-friendly</span><span>✓ No signup</span></div>
+    </section>
+
+    <section id="tools" class="tools-section">
+      <div class="section-heading">
+        <div><p class="eyebrow">TOOLBOX</p><h2>Choose a tool</h2></div>
+        <p class="muted">Useful tools, all in one place.</p>
+      </div>
+      <div class="tool-grid" id="toolGrid">
+        <article class="tool-card" data-search="word character counter text writing">
+          <div class="tool-icon lavender">Aa</div><h3>Word & Character Counter</h3>
+          <p>Count words, characters, and spaces in your text.</p><button class="open-tool" data-tool="counter">Open tool <span>→</span></button>
+        </article>
+        <article class="tool-card" data-search="case converter uppercase lowercase text writing">
+          <div class="tool-icon mint">Aa</div><h3>Case Converter</h3>
+          <p>Convert text to uppercase, lowercase, or title case.</p><button class="open-tool" data-tool="case">Open tool <span>→</span></button>
+        </article>
+        <article class="tool-card" data-search="remove extra spaces clean text">
+          <div class="tool-icon peach">≋</div><h3>Remove Extra Spaces</h3>
+          <p>Clean up repeated spaces and blank lines.</p><button class="open-tool" data-tool="spaces">Open tool <span>→</span></button>
+        </article>
+        <article class="tool-card" data-search="percentage calculator math">
+          <div class="tool-icon blue">％</div><h3>Percentage Calculator</h3>
+          <p>Find a percentage of any number.</p><button class="open-tool" data-tool="percentage">Open tool <span>→</span></button>
+        </article>
+        <article class="tool-card" data-search="discount calculator sale price money">
+          <div class="tool-icon pink">%</div><h3>Discount Calculator</h3>
+          <p>Calculate the discount amount and final price.</p><button class="open-tool" data-tool="discount">Open tool <span>→</span></button>
+        </article>
+        <article class="tool-card" data-search="age calculator date birthday">
+          <div class="tool-icon yellow">◷</div><h3>Age Calculator</h3>
+          <p>Calculate age in years, months, and days.</p><button class="open-tool" data-tool="age">Open tool <span>→</span></button>
+        </article>
+        <article class="tool-card" data-search="gst calculator india tax">
+          <div class="tool-icon lavender">₹</div><h3>GST Calculator</h3>
+          <p>Estimate GST and total price in India.</p><button class="open-tool" data-tool="gst">Open tool <span>→</span></button>
+        </article>
+        <article class="tool-card" data-search="image resize compressor future">
+          <div class="tool-icon mint">▧</div><h3>Image Tools</h3>
+          <p>Image resizing and compression are coming soon.</p><span class="coming">Coming soon</span>
+        </article>
+      </div>
+      <p id="noResults" class="muted hidden">No tools match that search. Try another word.</p>
+    </section>
+
+    <section class="workspace hidden" id="workspace" aria-live="polite">
+      <div class="workspace-top"><div><p class="eyebrow">YOUR TOOL</p><h2 id="workspaceTitle">Tool</h2></div><button id="closeTool" class="close-btn" aria-label="Close tool">✕</button></div>
+      <div id="toolContent"></div>
+    </section>
+
+    <section class="about-strip">
+      <div class="about-symbol">✦</div><div><h2>Made to be straightforward</h2><p>FreeTools Hub is a simple starter project. Tools run in your browser; this demo does not upload your text to a server.</p></div>
+    </section>
+    <section class="info-grid">
+      <article><h3>About</h3><p>FreeTools Hub provides simple browser-based utilities for everyday tasks. We aim to make common calculations and text cleanup quick and accessible.</p></article>
+      <article><h3>Privacy</h3><p>The tools on this starter page process entered text and numbers locally in your browser. This static demo does not include analytics, accounts, or advertising.</p></article>
+      <article><h3>Contact</h3><p>Before publishing, replace this text with a real contact email or contact page that you control.</p></article>
+    </section>
+  </main>
+
+  <footer><span>© <span id="year"></span> FreeTools Hub</span><span>Built for everyday tasks</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
